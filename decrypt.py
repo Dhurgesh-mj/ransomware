@@ -14,7 +14,7 @@ with open("key.key","rb") as key:
     password = key.read()
 
 passphase="enter your screct password"
-userphase=input("[+]enter the phases phase i have given u ") 
+userphase=input("[+]enter the password i have given u ") 
 
 if passphase==userphase:
     for file in allfiles:
