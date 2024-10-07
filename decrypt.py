@@ -13,7 +13,7 @@ print(allfiles)
 with open("key.key","rb") as key:
     password = key.read()
 
-passphase="enter your screct password"
+passphase="enter your screct password" #enter your password
 userphase=input("[+]enter the password i have given u ") 
 
 if passphase==userphase:
